@@ -1,0 +1,14 @@
+{
+  "name": "lab3.1server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "hi"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.12.4"
+  }
+}
