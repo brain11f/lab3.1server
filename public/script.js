@@ -8,12 +8,17 @@ $(function() {
     });
     
     $('#verbNoun').on('click', function() {
-        event.preventDefault();
-        $.get("http://localhost:5000/virb", function (response) {
-            $("#theVerb").text(response);
+        $.get("/adjective", function(response) {
+            var adjective = response.word;
+            $("#theAdjective").text(adjective);
         });
-        $.get("http://localhost:5000/noun", function (response) {
-            $("#theNoun").text(response);
+        $.get("/verbs", function (response) {
+            var verbs = response.word;
+            $("#theVerb").text(verbs);
+        });
+        $.get("/nouns", function (response) {
+            var nouns = response.word;
+            $("#theNoun").text(nouns);
         });
     });
 });
