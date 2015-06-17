@@ -5,12 +5,23 @@
     <title>Document</title>
 </head>
 <body>
-    <button id="quote">quote!</button>
-    <p id="theQuote"></p>
-    <button id="verbNoun">verb and noun!</button>
+    <button id="verbNoun">Band Name Button</button>
     <p style="display:inline" id="theAdjective">adjective</p>
     <p style="display:inline" id="theVerb">verb</p>
     <p style="display:inline" id="theNoun">noun</p>
+    <h3>Submit words!</h3>
+    <form id="submitAdjective">
+        <label>Add a adjective:</label><input type="text" name="adjective">
+        <input type="submit" value="Submit Words"/>
+    </form>
+    <form id="submitVerbs">
+        <label>Add a verb:</label><input type="text" name="verbs">
+        <input type="submit" value="Submit Words"/>
+    </form>
+    <form id="submitNouns">
+        <label>Add a noun:</label><input type="text" name="nouns">
+        <input type="submit" value="Submit Words"/>
+    </form>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="script.js"></script>
 </body>
